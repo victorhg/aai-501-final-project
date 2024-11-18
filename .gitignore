@@ -1,0 +1,5 @@
+### do not add the following to git
+
+datasets/
+.DS*
+.git/
