@@ -7,6 +7,12 @@ Group Members
 - Fatimat Atanda
 - Victor Hugo Germano
 
+# Run the Project
+
+- Download Images from [Kaggle Dataset](https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection), or [OneDrive](https://uofsandiego-my.sharepoint.com/:u:/g/personal/dverduzco_sandiego_edu/EY4f9M9uHatAuEf_HzcFygMBjyWW9y-2n6G4lw8KhP2R4g?e=tvYq2E), store originals on ```datasets/raw_images```
+- File ```notebooks/code.ipynb``` does image processing and model training
+
+
 # Project Objective and Purpose
 We want to explore possibilities in identifying PPEs on images, using:
 
