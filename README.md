@@ -7,6 +7,12 @@ Group Members
 - Fatimat Atanda
 - Victor Hugo Germano
 
+# Run the Project
+
+- Download Images from Kaggle Dataset, store originals on ```datasets/raw_images```
+- File ```notebooks/code.ipynb``` does image processing and model training
+
+
 # Project Objective and Purpose
 We want to explore possibilities in identifying PPEs on images, using:
 
