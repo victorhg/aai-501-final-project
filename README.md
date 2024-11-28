@@ -34,7 +34,7 @@ PPE detection using computer vision algorithms and machine learning models will 
 ## General Assets
 
 - [Drive folder with files](https://drive.google.com/drive/u/1/folders/15zDin3POxuCeulVcSprJBGOdCX-eOWyf)
-- [Presentation Slides](https://docs.google.com/presentation/d/1e6HisiQKIRF9ouSWDprAzndRrTnGC11QO9PytojGNlI/edit#slide=id.p)
+- [Presentation Slides](https://uofsandiego-my.sharepoint.com/:p:/g/personal/dverduzco_sandiego_edu/Ef6Y6QianIFKpRCftnJCUsMBCntFvWeHDpm-ezzhPlmbFQ?e=U9gp1a)
 - [Tech Document](https://docs.google.com/document/d/1ssicjau-rubaIj-ixYwKiXgBDghCeJDWml9zpUxw-4A/edit?tab=t.0)
 
 
