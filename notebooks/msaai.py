@@ -88,6 +88,18 @@ def reset_directories(directories):
             print(f"Failed to create directory {dir_path}. Reason: {e}")
 
 
+# SPLIT IMAGE DATASET AND FOLDERS
+def arrange_image_files(df, source_image_dir, image_dirs):
+    for _, file in df.iterrows():
+        image_file = file["filename"]
+        # save the image to the appropriate directory
+        image_path = os.path.join(source_image_dir, image_file)
+        split = file["split"]
+        image = cv2.imread(image_path)
+        output_image_path = os.path.join(image_dirs[split], image_file)
+        cv2.imwrite(output_image_path, image)
+
+
 def img_train_test_split(source_image_dir):
     """
     Base on files in source_image_dir, split images following rule
