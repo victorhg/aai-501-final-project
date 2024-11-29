@@ -1,0 +1,4 @@
+nc: 10 
+test: ../datasets/images/train
+train: ../datasets/images/test
+val: ../datasets/images/valid

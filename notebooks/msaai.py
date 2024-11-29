@@ -89,15 +89,32 @@ def reset_directories(directories):
 
 
 # SPLIT IMAGE DATASET AND FOLDERS
-def arrange_image_files(df, source_image_dir, image_dirs):
-    for _, file in df.iterrows():
-        image_file = file["filename"]
-        # save the image to the appropriate directory
-        image_path = os.path.join(source_image_dir, image_file)
-        split = file["split"]
-        image = cv2.imread(image_path)
-        output_image_path = os.path.join(image_dirs[split], image_file)
-        cv2.imwrite(output_image_path, image)
+def arrange_image_and_label_files(
+    df, source_image_dir, source_label_dir, image_dirs, label_dirs
+):
+    for _, row in df.iterrows():
+        img_file = row["filename"]
+        split = row["split"]
+
+        # Source paths
+        img_src = os.path.join(source_image_dir, img_file)
+        label_src = os.path.join(
+            source_label_dir, os.path.splitext(img_file)[0] + ".txt"
+        )
+
+        # Destination paths
+        img_dest = os.path.join(image_dirs[split], img_file)
+        label_dest = os.path.join(
+            label_dirs[split], os.path.splitext(img_file)[0] + ".txt"
+        )
+
+        # Copy image file
+        if os.path.exists(img_src):
+            shutil.copy(img_src, img_dest)
+
+        # Copy corresponding label file
+        if os.path.exists(label_src):
+            shutil.copy(label_src, label_dest)
 
 
 def img_train_test_split(source_image_dir):
