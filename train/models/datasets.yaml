@@ -1,7 +1,0 @@
-# organized paths
-train: datasets/images/train
-test: datasets/images/test
-val: datasets/images/valid
-
-nc: 3  # Number of classes
-names: ["hardhat", "vest", "goggles"]  # List of class names
