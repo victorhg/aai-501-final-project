@@ -1,4 +1,9 @@
-nc: 10 
-test: ../datasets/images/train
-train: ../datasets/images/test
-val: ../datasets/images/valid
+# organized paths
+train: ../datasets/images/train
+test: ../datasets/images/test
+val: ../datasets/images/val
+
+nc: 10  # Number of classes
+names: ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask',
+        'NO-Safety Vest', 'Person', 'Safety Cone',
+        'Safety Vest', 'Machinery', 'Vehicle'] 
