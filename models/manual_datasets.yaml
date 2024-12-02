@@ -1,0 +1,8 @@
+# organized paths
+train: ../datasets/manually_annotated/images/train
+val: ../datasets/manually_annotated/images/val
+
+nc: 10  # Number of classes
+names: ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask',
+        'NO-Safety Vest', 'Person', 'Safety Cone',
+        'Safety Vest', 'Machinery', 'Vehicle']  # List of class names
