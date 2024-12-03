@@ -9,7 +9,7 @@ Group Members
 
 # Run the Project
 
-- Download Images from [Kaggle Dataset](https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection), or [OneDrive](https://uofsandiego-my.sharepoint.com/:u:/g/personal/dverduzco_sandiego_edu/EY4f9M9uHatAuEf_HzcFygMBjyWW9y-2n6G4lw8KhP2R4g?e=tvYq2E), store originals on ```datasets/raw_images```
+- Download Images from [Kaggle Dataset](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow/code), or [OneDrive](https://uofsandiego-my.sharepoint.com/:u:/g/personal/dverduzco_sandiego_edu/EY4f9M9uHatAuEf_HzcFygMBjyWW9y-2n6G4lw8KhP2R4g?e=tvYq2E), store originals on ```datasets/raw_images```
 - File ```notebooks/code.ipynb``` does image processing and model training
 
 
@@ -34,7 +34,7 @@ PPE detection using computer vision algorithms and machine learning models will 
 ## General Assets
 
 - [Drive folder with files](https://drive.google.com/drive/u/1/folders/15zDin3POxuCeulVcSprJBGOdCX-eOWyf)
-- [Presentation Slides](https://docs.google.com/presentation/d/1e6HisiQKIRF9ouSWDprAzndRrTnGC11QO9PytojGNlI/edit#slide=id.p)
+- [Presentation Slides](https://uofsandiego-my.sharepoint.com/:p:/g/personal/dverduzco_sandiego_edu/Ef6Y6QianIFKpRCftnJCUsMBCntFvWeHDpm-ezzhPlmbFQ?e=U9gp1a)
 - [Tech Document](https://docs.google.com/document/d/1ssicjau-rubaIj-ixYwKiXgBDghCeJDWml9zpUxw-4A/edit?tab=t.0)
 
 
