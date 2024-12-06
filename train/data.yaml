@@ -1,5 +1,0 @@
-names: ['Hardhat','Mask','NO-Hardhat','NO-Mask','NO-Safety Vest','Person','Safety Cone','Safety Vest','Machinery','Vehicle']
-nc: 10
-test: ../datasets/images/train
-train: ../datasets/images/test
-val: ../datasets/images/valid

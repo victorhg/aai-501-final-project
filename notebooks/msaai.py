@@ -71,21 +71,21 @@ def reset_directories(directories):
     Parameters:
         directories (list): List of directories to reset.
     """
-    for dir_path in directories:
-        if os.path.exists(dir_path):
+    for path in directories:
+        if os.path.exists(path):
             # delete the directory and all its contents
             try:
-                shutil.rmtree(dir_path)
-                print(f"Deleted existing directory: {dir_path}")
+                shutil.rmtree(path)
+                print(f"Deleted existing directory: {path}")
             except Exception as e:
-                print(f"Failed to delete {dir_path}. Reason: {e}")
+                print(f"Failed to delete {path}. Reason: {e}")
 
         # Recreate the directory
         try:
-            os.makedirs(dir_path, exist_ok=True)
-            print(f"Recreated directory: {dir_path}")
+            os.makedirs(path, exist_ok=True)
+            print(f"Recreated directory: {path}")
         except Exception as e:
-            print(f"Failed to create directory {dir_path}. Reason: {e}")
+            print(f"Failed to create directory {path}. Reason: {e}")
 
 
 # SPLIT IMAGE DATASET AND FOLDERS
