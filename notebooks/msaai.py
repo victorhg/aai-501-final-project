@@ -6,6 +6,9 @@ import random
 from numpy import split
 import pandas as pd
 
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+
 
 # Function to get class colors
 def getColours(cls_num):
@@ -86,6 +89,43 @@ def reset_directories(directories):
             print(f"Recreated directory: {path}")
         except Exception as e:
             print(f"Failed to create directory {path}. Reason: {e}")
+
+def visualize_image_list(images_list, title=''):
+# Check if there are enough images
+    if len(images_list) < 3:
+        print("Not enough images found!")
+    else:
+        # Create a subplot with 1 row and 3 columns
+        fig, axes = plt.subplots(1, 3, figsize=(13, 7))  # Width, height
+    
+        for i, ax in enumerate(axes):
+            # Load and display each image
+            image = mpimg.imread(images_list[i])
+            ax.imshow(image)
+            ax.axis('off')  # Hide axes
+            ax.set_title(f"{title} {i}")
+    
+        plt.tight_layout()
+        plt.show()
+
+
+def visualize_random_imgs(images_dir, num_images=5):
+# define function to visualize random images
+    image_files = [f for f in os.listdir(images_dir) if f.endswith(('.jpg', '.jpeg', '.png'))]
+    selected_files = random.sample(image_files, min(num_images, len(image_files)))
+
+    plt.figure(figsize=(12, 6))
+    for i, image_file in enumerate(selected_files):
+        image_path = os.path.join(images_dir, image_file)
+        image = cv2.imread(image_path)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        plt.subplot(1, num_images, i + 1)
+        plt.imshow(image)
+        plt.axis("off")
+        plt.title(image_file)
+    plt.suptitle(f"Random Images Visualization {images_dir}")
+    plt.tight_layout()
+    plt.show()
 
 
 # SPLIT IMAGE DATASET AND FOLDERS
